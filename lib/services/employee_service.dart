@@ -16,7 +16,7 @@ class EmployeeService {
 
       empList.forEach((emp) {
         print(
-            " employee Name : ${emp.firstName},  employee Email:${emp.email}");
+            " employee Name : ${emp.firstName},  employee Salary:${emp.salary}");
       });
     } catch (e) {
       print(e);
