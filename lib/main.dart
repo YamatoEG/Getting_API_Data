@@ -1,9 +1,8 @@
+import 'package:employee_api/screens/employees_info.dart';
 import 'package:employee_api/services/employee_service.dart';
 import 'package:flutter/material.dart';
 
-void main() async {
-  EmployeeService service = EmployeeService();
-  await service.getEmploye();
+void main() {
   runApp(const MyApp());
 }
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: EmployeesInfo(),
     );
   }
 }

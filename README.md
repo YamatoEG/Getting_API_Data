@@ -1,30 +1,31 @@
 # Fetch Employee Data Using DIO and Parse JSON to Model
 
-## Overview
-
-This project demonstrates how to fetch employee data from an external API using the `DIO` package in Dart, parse the JSON responses, and map them to an `Employee` model. The data is fetched asynchronously and mapped to the `Employee` model class for further use within your application.
+Indicates the main topic or purpose of the project, which is to fetch employee data using the DIO package and map it to a JSON model.
 
 ## Project Structure
 
-The project is organized into the following directories:
+lib/services: Notes that this folder will contain service logic for network requests.
 
-- **`lib/services`**: Contains the service logic that handles the network requests using `DIO`.
-- **`lib/models`**: Contains the `Employee` model class, which defines the structure of an employee object and includes JSON serialization and deserialization methods.
+lib/models: Describes where the Employee model is defined, which includes serialization methods.
+
+lib/screens: Mentions that user interface components are in this directory.
 
 ## Dependencies
 
-- **DIO**: A powerful HTTP client for Dart that provides an easy way to make requests and handle responses.
+Provides the necessary packages for the project, specifically DIO and Flutter, to be added to the pubspec.yaml file.
 
-Add the following to your `pubspec.yaml` file to include the necessary dependencies:
+## How It Works
 
-```yaml
-dependencies:
-  dio: ^5.1.0
-  flutter:
-    sdk: flutter
+Introduces an explanation of how the employee data is fetched and displayed.
 
-```
-## How it Works
-# EmployeeService
+### EmployeeService
 
-    The EmployeeService class fetches the employee data from a remote API using the DIO package. The response is parsed as JSON, and each JSON object is mapped to an instance of the Employee model. The service returns a list of Employee objects.
+Explains the purpose of the EmployeeService class, which handles API requests using the DIO package. This section clarifies how the application fetches and processes employee data from an API.
+Employees Info Screen
+### Employees Info Screen
+
+Describes the EmployeesInfo screen, which lists employee data and allows user interaction. It contains key aspects like:
+
+Loading data from SharedPreferences.
+Showing a loading indicator.
+Navigating to a detailed view when an employee is tapped.
